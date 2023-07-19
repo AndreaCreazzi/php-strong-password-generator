@@ -1,16 +1,12 @@
 <?php
 require_once __DIR__ . '/../utils/functions.php';
 
-// Inizializza la sessione
 session_start();
 
-// Verifica se è presente una password generata nella sessione
 if (isset($_SESSION['generated_password'])) {
     $generated_password = $_SESSION['generated_password'];
-    // Cancella la password dalla sessione per evitare di mostrarla nuovamente
     unset($_SESSION['generated_password']);
 } else {
-    // Se non è presente una password nella sessione, reindirizza l'utente a index.php
     header('Location: ../../../../index.php');
     exit();
 }

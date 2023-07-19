@@ -1,4 +1,4 @@
-<?php  
+<?php
 function generateRandomPassword($length)
 {
     $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+';
@@ -11,6 +11,3 @@ function generateRandomPassword($length)
 
     return $password;
 }
-
-$error_message = '';
-$generated_password = '';

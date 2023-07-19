@@ -42,8 +42,8 @@ if (isset($_GET['password_length'])) {
                         <label for="password">Lungezza password :</label>
                         <input class="my-3" id="password" name="password_length" type="number" placeholder="Inserisci un numero">
                         <div class="form-check form-switch mx-3">
-                            <input class="form-check-input" type="checkbox" role="switch" name="allow_repeat_chars" value="1" <?php echo $allow_repeat_chars ? 'checked' : ''; ?>>
-                            Consenti la ripetizione dei caratteri ?
+                            <label for="chars">Consenti la ripetizione dei caratteri ?</label>
+                            <input class="form-check-input" type="checkbox" role="switch" name="allow_repeat_chars" value="1" id="chars" <?php echo $allow_repeat_chars ? 'checked' : ''; ?>>
                         </div>
                         <button class="btn btn-primary my-3 px-4" type="submit">CREA</button>
                     </form>

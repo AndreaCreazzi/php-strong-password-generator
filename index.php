@@ -36,19 +36,22 @@ if (isset($_GET['password_length'])) {
         <div class="container text-white text-center mt-4">
             <h1>Strong Password Generator</h1>
             <h2>Genera una password sicura</h2>
-            <div class="card mt-4">
+            <div class="card mt-4 bg-success text-white">
                 <div class="card-body d-flex align-items-center justify-content-center">
                     <form action="" method="GET">
                         <label for="password">Lungezza password :</label>
-                        <input class="mx-3 py-2" id="password" name="password_length" type="number" placeholder="Inserisci un numero">
-                        <input class="" type="checkbox" name="allow_repeat_chars" value="1" <?php echo $allow_repeat_chars ? 'checked' : ''; ?>>
-                        Ripetizione dello stesso carattere
-                        <button class="btn btn-success py-2 ms-3" type="submit">Crea</button>
+                        <input class="my-3" id="password" name="password_length" type="number" placeholder="Inserisci un numero">
+                        <div class="form-check form-switch mx-3">
+                            <input class="form-check-input" type="checkbox" role="switch" name="allow_repeat_chars" value="1" <?php echo $allow_repeat_chars ? 'checked' : ''; ?>>
+                            Consenti la ripetizione dei caratteri ?
+                        </div>
+                        <button class="btn btn-primary my-3 px-4" type="submit">CREA</button>
                     </form>
                 </div>
             </div>
         </div>
     </main>
 </body>
+
 
 </html>

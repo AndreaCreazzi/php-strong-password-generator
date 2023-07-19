@@ -22,10 +22,8 @@ if (isset($_SESSION['generated_password'])) {
         <div class="container text-white text-center">
             <h1>Generated Password</h1>
             <div class="card mt-4">
-                <div class="card-header">
-                    <div class="alert alert-info">Password generata: <?php echo $generated_password; ?></div>
-                </div>
                 <div class="card-body">
+                    <div class="alert alert-success">Password generata: <?php echo $generated_password; ?></div>
                     <a href="../../index.php" class="btn btn-primary">Torna alla generazione di password</a>
                 </div>
             </div>
